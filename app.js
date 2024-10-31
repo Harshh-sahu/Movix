@@ -258,7 +258,7 @@ async function getTrendingMovies() {
 
 async function addTrendingMoviestoDOM() {
   const data = await getTrendingMovies();
-  const displayMovies = data.slice(0, 5);
+  const displayMovies = data.slice(0, 10);
   //console.log(displayMovies);
   let resultArr = displayMovies.map((m) => {
     return `
